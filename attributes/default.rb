@@ -45,3 +45,6 @@ default['user']['data_bag_name']        = "users"
 default['user']['user_array_node_attr'] = "users"
 
 default[default['user']['user_array_node_attr']] = []
+
+default['user']['data_bag_encrypted']      = false
+default['user']['data_bag_encryption_key'] = nil
