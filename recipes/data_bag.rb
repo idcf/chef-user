@@ -33,7 +33,7 @@ Array(user_array).each do |i|
   name = i.sub(/[.]/, '-')
   
   u = if node['user']['data_bag_encrypted']
-    Chef::EncryptedDataBagitem.load(bag, name, node['user']['data_bag_encryption_key'])
+    Chef::EncryptedDataBagItem.load(bag, name, node['user']['data_bag_encryption_key'])
   else
     data_bag_item(bag, name)
   end
